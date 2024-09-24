@@ -1,0 +1,16 @@
+<div class="container mt-4">
+  <h3 class="mb-4">Pridėti prekę</h3>
+  <form (ngSubmit)="pridetiPreke()" class="row g-3">
+    <div class="col-md-6">
+      <label for="preke" class="form-label">Prekė</label>
+      <input id="preke" [(ngModel)]="naujaPreke.preke" name="preke" class="form-control" required>
+    </div>
+    <div class="col-md-6">
+      <label for="kiekis" class="form-label">Kiekis</label>
+      <input id="kiekis" type="number" [(ngModel)]="naujaPreke.kiekis" name="kiekis" class="form-control" required>
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary">Pridėti</button>
+    </div>
+  </form>
+</div>
